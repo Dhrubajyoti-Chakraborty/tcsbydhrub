@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+.header {
+  background-color: #f1f1f1;
+  /* padding: 30px; */
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: black;
+  height: 62px;
+}
+/* 
+#navbar a {
+  float: right;
+  display: block;
+  color: #A1A1A1;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 14px;
+    padding-right: 30px;
+    padding-top: 22px;
+} */
+#navbar a {
+  /* float: left; */
+  display: inline;
+  color: #A1A1A1;
+  text-align: center;
+  /* padding: 14px 16px; */
+  padding-left: 22px;
+  text-decoration: none;
+  font-size: 14px;
+
+}
+
+/* #navbar i{
+    float: right;
+} */
+
+/* #navbar a:hover {
+  background-color: #ddd;
+  color: black;
+} */
+
+/* #navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+} */
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+.content{
+    width: 100%;
+        height: 100vh;
+        background: url(BOB-updated-1366X700.jpg);
+        background-size: cover;
+        background-position: center;
+}
+
+div#navbar .one {
+    height: 66px;
+    width: 45px;
+    float: right;
+    padding-right: 98px;
+    margin-top: -44px;
+}
+div#navbar .two {
+    height: 31px;
+    width: 157px;
+    /* padding-right: 257px; */
+    float: left;
+    padding-left: 103px;
+    padding-top: 13px;
+}
+i.fa.fa-search {
+    color: #A1A1A1;
+    float: right;
+    padding-right: 162px;
+
+}
+.rightitem {
+    padding-left: 524px;
+    /* height: 62px; */
+    margin-top: -24px;
+    
+}
+.content h2{
+  color: #fff;
+  padding-left: 498px;
+    padding-top: 322px;
+}
+.content button{
+  background : #0e8ff9;
+  color: #fff;
+  height: 46px;
+    width: 201px;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    margin-left: 549px;
+}
+.insight-business{
+  padding-top: 10px;
+}
+
+.insight-business h3 {
+    font-weight: 500;
+    text-align: center;
+}
+.leftimage img {
+    padding-left: 105px;
+}
+.leftimage h5 {
+    font-weight: 300;
+    font-size: 22px;
+    padding-left: 110px;
+    margin-top: 3px;
+}
+.midimage h5 {
+    font-weight: 300;
+    margin-top: 6px;
+    margin-bottom: -27px;
+}
+.midimage {
+    padding-left: 493px;
+    margin-top: -598px;
+}
+.midimage img {
+    width: 370px;
+    height: 198px;
+}
+img.imagebottom {
+    height: 210px;
+}
+.rightimage {
+    float: right;
+    margin-top: -519px;
+}
+img.imageright {
+    padding-right: 98px;
+}
+.rightimage h5 {
+    font-weight: 300;
+    margin-top: 1px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 31.7%;
+  height: 490px;
+  /* float: left; */
+  /* margin: 0 1rem 2rem 1rem; */
+    /* text-align: center; */
+    /* min-height: 23.38rem;
+    box-shadow: 0 0.125rem 0.625rem 0 rgb(0 0 0 / 20%);
+    background: #fff;
+    text-decoration: none; */
+  
+}
+
+
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transition: box-shadow 0.2s;
+}
+
+/* .container {
+  padding: 2px 16px;
+} */
+.bordercard {
+    padding-top: 132px;
+    padding-left: 22px;
+    height: 500px;
+
+}
+.card img {
+    height: 213px;
+    /* width: 403px; */
+    width: 100%;
+    object-fit: cover;
+    object-position: top center;
+    border: none;
+}
+
+.thirdcard {
+    padding-left: 886px;
+    margin-top: -387px;
+    width: 1272px;
+    margin-top: -490px;
+}
+.secondcard {
+    padding-left: 454px;
+    margin-top: -390px;
+    width: 1272px;
+    margin-top: -490px;
+}
+.container {
+    margin-top: -38px;
+    padding-right: 24px;
+}
+
+.container h4 {
+    text-align: center;
+    color: #20648e;
+    font-weight: 300;
+    margin-bottom: -22px;
+    font-size: 22px;
+    padding-top: 8px;
+    padding-left: 29px;
+}
+.container p {
+    text-align: center;
+    font-size: 15px;
+    padding-top: 14px;
+    padding-left: 33px;
+}
+.third {
+  padding-top: 44px;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 457px;
+}
+.third h3 {
+    font-weight: 300;
+}
+/* .card:hover {
+    box-shadow: 0 10px 15px 0 rgb(0 0 0 / 8%), 0 15px 30px 0 rgb(0 0 0 / 8%);
+} */
+
+.column {
+  float: left;
+  /* padding: 10px; */
+}
+
+/* Left and right column */
+.column.leftside {
+  width: 32%;
+  /* padding-left: 10px; */
+}
+
+.column.rightside {
+  width: 33.5%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 34%;
+  margin-top: -6px;
+  padding-left: 3px;
+
+}
+
+.row{
+  padding-left: 3px;
+  clear: both;
+  padding-right: 48px;
+  width: 1166px;
+}
+
+.cardtwo {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 96%;
+  height: 526px;
+
+}
+.cardtwo:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transition: box-shadow 0.2s;
+}
+.cardtwo  img {
+    height: 213px;
+    /* width: 403px; */
+    width: 100%;
+    object-fit: cover;
+    object-position: top center;
+    border: none;
+}
+.containertwo {
+    margin-top: -38px;
+    padding-right: 24px;
+}
+
+.containertwo h4 {
+    text-align: center;
+    color: #20648e;
+    font-weight: 300;
+    margin-bottom: -22px;
+    font-size: 22px;
+    padding-top: 8px;
+    padding-left: 29px;
+}
+.containertwo p {
+    text-align: left;
+    font-size: 15px;
+    padding-top: 14px;
+    padding-left: 33px;
+}
+.containertwo.leftcard p {
+    font-size: 18px;
+    padding-top: 38px;
+    width: 292px;
+    margin-left: -20px;
+    padding-bottom: 31px;
+}
+.column.leftside img {
+    height: 272px;
+}
+.column.middle img {
+    height: 235px;
+}
+.backgroundone{
+  width: 100%;
+        /* height: 100vh; */
+        height: 235px;
+        background: url(workplace-award-cio-1330x1270.jpg);
+        background-size: cover;
+        /* background-position: center; */
+}
+.backgroundtwo{
+  width: 100%;
+        /* height: 100vh; */
+        height: 235px;
+        background: url(tcs-bancs-powers-societe-generale-securities-services-transformation-of-pan-European-custody-platform-1330x1270.jpg);
+        background-size: cover;
+        /* background-position: center; */
+}
+.opacitypara p {
+    font-size: 13px;
+    text-align: left;
+    background: white;
+    height: 77px;
+    opacity: 0.6;
+    font-weight: bold;
+    font-size: 12px;
+    padding-left: 19px;
+    padding-top: 8px;
+    
+}
+
+.opacitypara {
+    /* margin-top: -29px; */
+    padding-top: 146px;
+    /* opacity: 0.6; */
+}
+.containertwo.leftcard span {
+    font-size: 12px;
+    opacity: .5;
+}
+.containertwo.leftcard a {
+    font-size: 13px;
+    color: #0e8ff9;
+    float: right;
+    text-decoration: none;
+}
+.containertwo.leftcard a:hover {
+    text-decoration: underline;
+}
+.column.rightside img {
+    width: 372px;
+    height: 272px;
+}
+.footer{
+  height: 500px;
+  background: #474747;
+  /* padding: 50px 0; */
+}
+/* .leftcard {
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: -22px;
+    font-size: 22px;
+    padding-top: 43px;
+    padding-left: 29px;
+} */
+/* . p {
+    text-align: left;
+    font-size: 19px;
+    padding-top: 14px;
+    padding-left: 33px;
+} */
+</style>
+</head>
+<body>
+
+
+
+<div id="navbar">
+   <a href=""><img class="two" src="tatalogo-white2x.png" alt=""></a>
+
+<div class="rightitem">
+  <a class="active" href="javascript:void(0)">Industries</a>
+  <a href="javascript:void(0)">Services</a>
+  <a href="javascript:void(0)">Products & Platforms</a>
+  <a href="javascript:void(0)">Discover TCS</a>
+  <a href="javascript:void(0)">Insights</a>
+  <a href="javascript:void(0)">Careers</a>
+  <i class="fa fa-search"></i>
+
+  <img class="one" src="tata-logo-white.png" alt="">
+
+
+
+    
+</div>
+</div>
+
+<div class="content">
+  <h2>Building on Belief</h2>
+  <button >It all starts here</button>
+</div>
+<div class="insight-business">
+    <h3>Insights for Your Business</h3>
+
+    <div class="leftimage">
+      <img src="explainable-ai-machine-learning-models-365x500.jpg" alt="">
+      <h5>Explainable AI: Understanding the <br> ‘Why’</h5>
+    </div>
+    <div class="midimage">
+      <img src="iot-energy-management-solution-sustainability-goals-690X218.jpg"   alt="">
+      <h5>Navigating a Sustainable Future in <br> Energy Management</h5>
+
+    <br>
+
+    <img class="imagebottom" src="cloud-adoption-migration-bfsi-365x500.jpg"   alt="">
+    <h5>Perspectives on Cloud Adoption in <br> BFSI</h5>
+      
+    </div>
+
+    <div class="rightimage">
+      <img class="imageright" src="online-shopping-logistics-delivery-experience-365X500.jpg"   alt="">
+      <h5>Package of the Future: Shaping E- <br> commerce Delivery Experiences</h5>
+    </div>
+</div>
+
+<div class="bordercard">
+
+<div class="card">
+  <img class="imageone" src="Cloud-840x1200.jpg" alt="Avatar" >
+  <div class="container">
+    <h4>Unlock the Power of Cloud</h4> 
+    <p>Accelerate Business Value with Cloud as the New <br> ERP</p> 
+  </div>
+</div>
+
+<div class="secondcard">
+
+<div class="card">
+  <img class="imagetwo" src="tcs-nitie-II-840X1200.jpg" alt="Avatar" >
+  <div class="container">
+    <h4>TCS-NITIE Joint Study</h4> 
+    <p>TCS and NITIE Recommend Accelerated COVID 19 Vaccination Across India</p> 
+  </div>
+</div>
+</div>
+
+<div class="thirdcard">
+
+<div class="card">
+  <img class="imagethree" src="sbws-home-banner-mob.jpg" alt="Avatar" >
+  <div class="container">
+    <h4>SBWS™: A New Work Order for the New World</h4> 
+    <p>Not Just Remote Working, but a Paradigm Shift in the Way We Work</p> 
+  </div>
+</div>
+</div>
+</div>
+
+
+
+<!-- <br><br><br><br> -->
+<div class="third">
+  <!-- <div> -->
+  <h3>In the News</h3>
+  <!-- <div class="card">
+    <img class="imageone" src="Cloud-840x1200.jpg" alt="Avatar" >
+    <div class="container">
+      <h4>Unlock the Power of Cloud</h4> 
+      <p>Accelerate Business Value with Cloud as the New <br> ERP</p> 
+    </div>
+  </div> -->
+
+  <div class="row">
+    <div class="column leftside">
+      <div class="cardtwo">
+        <img class="imageone" src="bob-card.jpg" alt="Avatar" >
+        <div class="containertwo leftcard">
+          <!-- <p>TCS Embarks on a New Brand Direction to Power its Next Horizon of Transformation-led Growth</p>  -->
+          <!-- <h6>PRESS RELEASE</h6> -->
+          <p> <span>PRESS RELEASE </span><br><br> <br> TCS Unveils its New Brand Statement ‘Building on Belief’</p>
+          <!-- <p>Accelerate Business Value with Cloud as the New <br> ERP</p>  -->
+
+         <br> <a href="">Know More</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="column middle">
+      <div class="cardtwo">
+        <!-- <img class="imageone" src="tcs-optunique-tcs-optumera-win-2021-artificial-intelligence-excellence-awards-1330x1270.jpg" alt="Avatar" > -->
+        <!-- <p>Accelerate Business Value with Cloud as the New <br> ERP</p>  -->
+        
+        <!-- <div class="containertwo">
+          <h4>Unlock the Power of Cloud</h4> 
+          <p>Accelerate Business Value with Cloud as the New <br> ERP</p> 
+        </div> -->
+        <!-- <img class="imageone" src="tcs-optunique-tcs-optumera-win-2021-artificial-intelligence-excellence-awards-1330x1270.jpg" alt="Avatar" > -->
+        <div class="backgroundone">
+          <div class="opacitypara">
+            <!-- <h5>PRESS RELEASE</h5> -->
+            <p>PRESS RELEASE <br><br>
+              TCS Optunique™ and TCS Optumera™ Win Top Honors at the 2021 Artificial Intelligence Excellence Awards</p>
+              
+          </div>
+          </div>
+          <br>
+          <div class="backgroundtwo">
+            <div class="opacitypara">
+              <!-- <h5>PRESS RELEASE</h5> -->
+              <p>PRESS RELEASE <br><br>
+                TCS BaNCS Powers Societe Generale Securities Services’ Transformation of Pan-European Custody Platform</p>
+                
+            </div>
+          
+            </div>
+        <!-- <div class="backgroundtwo">
+        </div> -->
+      </div>
+    </div>
+    
+    <div class="column rightside">
+      <div class="cardtwo">
+        <img class="imageone" src="Q4-FY21-card-new.jpg" alt="Avatar" >
+        <!-- <div class="containertwo">
+          <h4>Unlock the Power of Cloud</h4> 
+          <p>Accelerate Business Value with Cloud as the New <br> ERP</p> 
+        </div> -->
+        <div class="containertwo leftcard">
+          <!-- <p>TCS Embarks on a New Brand Direction to Power its Next Horizon of Transformation-led Growth</p>  -->
+          <!-- <h6>PRESS RELEASE</h6> -->
+          <p> <span>PRESS RELEASE </span><br><br> <br> TCS Closes FY 21 on Strong Note: Looks at Growth and Transformation to Power the Future</p>
+          <!-- <p>Accelerate Business Value with Cloud as the New <br> ERP</p>  -->
+
+         <br> <a href="">Know More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br><br>
+
+<div class="footer">
+<h1>footer</h1>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>
